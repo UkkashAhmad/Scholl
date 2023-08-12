@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Change</title>
+</head>
+<style>
+    .center{
+        text-align: center;
+        align-items: center;
+        background-color: aqua;
+        color: blue;
+        font-family: cursive;
+        font-size: xx-large;
+      
+    }
+    #PrintTable{
+        background-color: yellow;
+        color: violet;
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #Numbers{
+        height: 50px;
+        width: 100px;
+        font-size: x-large;
+    }
+</style>
+<body>
+    <div class="center">
+    <h1>on change</h1>
+    <label for="Numbers">Only Type a Number</label>
+    <input type="number" id="Numbers"placeholder="Type A Number..." onchange="Numbers()">
+    <h1 id="PrintTable"></h1>
+</div>
+
+    <script>
+const PTEL=document.getElementById('PrintTable')
+function Numbers() {
+    PTEL.innerHTML=''
+    let inputN=document.getElementById('Numbers').value;
+    for (let index = 1; index < 11; index++) {
+        PTEL.innerHTML+= `${inputN} x ${index} = ${inputN*index} <br>`
+        
+    }
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime COmp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ISDP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Support.html">Support</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Subjects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Math.html">Math</a></li>
+                  <li><a class="dropdown-item" href="engi.html">English</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admission.html" >Admission Form</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <center style="border: 4px solid rgb(1, 1, 1);">
+    <h1>hey Dear </h1>
+    <h3>Type a Number And See that Number is Prime Or Comp</h3>
+
+<label for="Hola">Type a Number </label>
+<input type="number"  id="Hole" placeholder="Type a Number.....">
+<button onclick="Hola()">Click me</button>
+
+<h1 id="Print"></h1>
+</center>
+
+</div>
+
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+        let Pplace=document.getElementById('Print')
+function Hola() {
+    Pplace.innerHTML=" "
+    let input=document.getElementById('Hole').value;
+    for (let index = 2; index <input; index++) {
+     if (input%index==0) {
+        Pplace.innerHTML=`This is ${input} Comp NUmber <br>`
+     break;}
+      else{
+        Pplace.innerHTML=`This is ${input} Prime num <br>`
+      }  
+    }
+}
+    </script>
+</body>
+</html>
