@@ -1,4 +1,7 @@
-
+*{
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: large;
+}
 .clas{
     direction: rtl;
 }

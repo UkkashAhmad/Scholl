@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+
+
+
+<input type="number" id="Num1" placeholder="Type a Number...">
+<input type="number" id="Num2" placeholder="Type a Number...">
+<button type="button" onclick="plus(Num1,Num2)">Calculate</button>
+
+<h1 id="Print"></h1>
+    <script>
+      
+function plus(mum1,mum2) {
+    let kaka=parseInt(document.getElementById('Num1').value)
+    let mama=parseInt(document.getElementById('Num2').value)
+  
+    document.getElementById('Print').innerHTML=`${mum1*mum2} `
+ plus(kaka,mama)
+}
+
+    </script>
+</body>
+</html>
